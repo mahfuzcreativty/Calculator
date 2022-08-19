@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahfuz's Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="dis1" readonly>
+            <input type="text" id="dis2" readonly>
+        </div>
+
+        <div class="row g-3">
+            <div class="col-6">
+                <button onclick="clearAll()" class="bgRed big-btn">AC</button>
+            </div>
+            <div class="col-3">
+                <button onclick="del()" class="bgRed">DEL</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum('/')">/</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(7)">7</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(8)">8</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(9)">9</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum('-')"> - </button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(4)">4</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(5)">5</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(6)">6</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum('*')"> * </button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(1)">1</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(2)">2</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(3)">3</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum('+')"> + </button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum(0)">0</button>
+            </div>
+            <div class="col-3">
+                <button onclick="getNum('.')"> . </button>
+            </div>
+            <div class="col-6">
+                <button onclick="calculateAll()" class="equal big-btn">
+                    <span> = </span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./function.js"></script>
+</body>
+</html>
